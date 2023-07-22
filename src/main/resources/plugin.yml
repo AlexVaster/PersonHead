@@ -1,0 +1,22 @@
+name: PersonHead
+description: A plugin to get head block
+version: '${version}'
+load: POSTWORLD
+author: AlexVaster
+main: org.av.personhead.Main
+api-version: '1.20'
+commands:
+  personhead:
+    description: Personhead command
+    aliases:
+      - ph
+      - person
+      - personhead
+    usage: /<command> [head, count, total_count, reload, reset, help]
+    permissions:
+      personhead.reload.use: true
+
+permissions:
+  personhead.use:
+    description: Permission to use ph
+    default: true
